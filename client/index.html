@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phishing Website Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-glow"></div>
+
+  <div class="container">
+    <h1>Phishing Website Detector</h1>
+    <p class="subtitle">
+      Cybersecurity Project — SRIJAN 2026 | Suman Kumar | Quantum University
+    </p>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="urlInput"
+        placeholder="Enter website URL..."
+      />
+      <button onclick="checkURL()">Check URL</button>
+    </div>
+
+    <div id="resultBox" class="result-card hidden">
+      <div id="icon" class="icon">🛡️</div>
+      <h2 id="status">SAFE</h2>
+      <p id="message" class="message">Website analysis result will appear here.</p>
+      <p id="score" class="score">Risk Score: 0/100</p>
+      <ul id="reasons"></ul>
+      <p id="tip" class="tip">Tip: Always verify suspicious links before visiting.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box">
+        <h3>28.15 Lakh+</h3>
+        <p>Cyber Crimes in India 2025</p>
+      </div>
+      <div class="stat-box">
+        <h3>Rs 22,495 Cr</h3>
+        <p>Lost to Cyber Fraud 2025</p>
+      </div>
+      <div class="stat-box">
+        <h3>#1</h3>
+        <p>India — Top Phishing Target in Asia</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
